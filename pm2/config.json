@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "exec_mode": "fork_mode",
+      "name": "resource-monitor-tool-v2",
+      "script": "./node_modules/.bin/serve",
+      "args": "build -s",
+      "env": {
+        "PORT": 6020
+      },
+      "env_production": {
+        "PORT": 6020,
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
